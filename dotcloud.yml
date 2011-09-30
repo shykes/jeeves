@@ -1,0 +1,4 @@
+bot:
+    buildscript: builder
+    type: custom
+    process: python jeeves.py dotcloud-team
