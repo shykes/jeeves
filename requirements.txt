@@ -1,1 +1,2 @@
 gevent
+https://github.com/s0undt3ch/gIRClib/tarball/master
