@@ -23,6 +23,8 @@ class Jeeves(IRCClient):
                 self.notice(channel, "1337!")
             else:
                 self.notice(channel, "No {nick}, it's not 13:37".format(nick=user.nick))
+        elif re.match('.*is jpetazzo on a plane ?\?.*', message):
+            self.msg(channel, "I'm pretty sure Jerome is on a plane.")
 
     def on_chanmsg(self, emitter, channel=None, user=None, message=None):
         message = message.lower().strip()
